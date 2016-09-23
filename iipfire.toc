@@ -5,4 +5,4 @@
 
 combustion.lua
 rune_of_power.lua
-parent.lua
+update.lua
