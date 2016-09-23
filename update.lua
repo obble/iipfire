@@ -8,7 +8,7 @@
         --  id   --  stacks stored
         [108853] = 2, -- fire blast
         [194466] = 2, -- phoenix's flames
-        [205029] = 1  -- flame on  todo: check if talented
+        [205029] = 1  -- flame on
     }
 
     local PositionGrid = function(f)
@@ -21,7 +21,7 @@
                 container:SetParent(f)
                 container:ClearAllPoints()
                 container:SetSize(20*index + 12*(index - 1), 20)
-                container:SetPoint('TOP', f, 'BOTTOM')
+                container:SetPoint('TOP', f, 'BOTTOM', 0, -6)
                 index = index + 1
             end
         end
@@ -29,9 +29,7 @@
 
     local parent = function()
         local f = C_NamePlate.GetNamePlateForUnit'player'
-        if f then
-            PositionGrid(f)
-        end
+        if f then PositionGrid(NamePlatePlayerResourceFrame) end
     end
 
     local CombustionLogic = function(v)
