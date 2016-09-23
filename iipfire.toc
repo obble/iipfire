@@ -1,0 +1,8 @@
+## Interface: 70000
+## Title: iip fire mage
+## Author: modernist
+## Notes: a tool for rune of power & burst rotation on fire mage
+
+combustion.lua
+rune_of_power.lua
+parent.lua
